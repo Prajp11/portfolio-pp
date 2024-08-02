@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Type from "./Type.jsx"; 
+import Type from "./Type.jsx";
 import Tilt from "react-parallax-tilt";
-import WebDev from "../Images/WebDev.png"; // Make sure this path is correct
+import WebDev from "../Images/WebDev.png";
 import { CgPhone } from "react-icons/cg";
 import { BsPerson } from "react-icons/bs";
 
-const Home = () => {
+const Homepage = () => {
   return (
     <div>
       <div className="HomePage">
         <div className="HomeText">
-          <h1>Hello there!</h1>
+          <h1>Hello Everyone</h1>
           <h1>
-            I'M <b>Prajwal Pandgale</b>
+            I am <b>Prajwal Pandgale</b>
           </h1>
           <Type />
           <Link to="/About">
@@ -22,7 +22,6 @@ const Home = () => {
               <BsPerson />
             </button>
           </Link>
-
           <Link to="/Contact">
             <button>
               Contact <CgPhone />
@@ -33,8 +32,11 @@ const Home = () => {
           <img className="WebDev" src={WebDev} alt="Web Developer" />
         </Tilt>
       </div>
+      <footer className="footer">
+        <p>&copy; 2024 Prajwal Pandgale. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
 
-export default Home;
+export default Homepage;
