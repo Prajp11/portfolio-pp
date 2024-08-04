@@ -8,28 +8,24 @@ const About = () => {
       <div className="AboutPage">
         <div className="AboutText">
           <h1 className="AboutTextHeading">
-            About Me !
+            Get to <b>know</b> me!
           </h1>
           <p>
-            Hi there! I’m Prajwal Pandgale, a <b>Web Developer</b> from Pune, India. 
-            My journey in tech has been shaped by working with <b>Java, HTML, CSS, Spring Boot, JavaScript, SQL</b> and <b>Mainframe Technologies.</b> 
+            Hi, my name is <b>Prajwal Pandgale</b> and I am from Pune,
+            India. I'm a <b>Web Developer</b> with experience in <b>Java, HTML, CSS, Spring Boot, JavaScript, SQL,</b> and <b>Mainframe Technologies</b>. <br />
             <br />
-            <br />I love diving into projects that challenge me and push the envelope on design and functionality. 
-            Creating user-friendly and innovative solutions is what drives me. I am always excited to do experiments with new technologies and find fresh ways to solve problems. If you check out my projects, you'll see how I turn ideas into reality with a blend of creativity and technical expertise.
-            <br />
+            I love to create projects with efficient designs and innovative solutions. You can check out some of my work in the projects section.
             <br />
             <br />I am <b>open</b> to new opportunities and collaborations where I can contribute and grow. Feel free to connect with me, links are in the footer.
             <br />
             Apart from coding, I enjoy exploring new technologies and working on personal projects to enhance my skills.
           </p>
-          <a href="../Resume/MyResume.pdf" download className="resume-btn">
+          <a href="/MyResume.pdf" download className="resume-btn">
             <button>
               Download Resume <FaFileDownload />
             </button>
           </a>
         </div>
-
-        <div></div>
       </div>
 
       <h1 className="SkillsHeading"> Skillset</h1>

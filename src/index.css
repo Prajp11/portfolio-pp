@@ -165,3 +165,77 @@ button:hover {
     margin-bottom: 75px;
   }
 }
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 10%;
+}
+
+.SkillBox {
+  width: max(15%, 150px);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 25px 25px 0px;
+  border: 3px solid var(--color);
+  font-size: 64px;
+  border-radius: 5px;
+  transition: 0.5s;
+  flex-direction: column; /* Ensure text is below the icon */
+}
+
+.SkillBox:hover {
+  transform: scale(1.2);
+  background-color: var(--color);
+  border: none;
+}
+
+.SkillBox .icon {
+  font-size: 64px; /* Control icon size */
+}
+
+.SkillBox p {
+  margin: 5px 0 0; /* Adjust margin for text */
+  font-size: 14px; /* Adjust text size */
+  color: #333; /* Adjust text color */
+}
+
+.SkillsHeading {
+  text-align: center;
+  margin: 50px 10px;
+  font-size: 36px;
+  letter-spacing: 0.6px;
+}
+
+@media (max-width: 500px) {
+  .AboutText {
+    font-size: 16px;
+  }
+
+  .WebDev {
+    width: 200px;
+    margin-bottom: 25px;
+  }
+
+  .SkillsHeading {
+    font-size: 26px;
+  }
+
+  .SkillBox {
+    width: 100px;
+    height: 100px;
+    font-size: 40px; /* Reduce overall size */
+  }
+
+  .SkillBox .icon {
+    font-size: 40px; /* Control icon size for smaller screens */
+  }
+
+  .SkillBox p {
+    font-size: 12px; /* Adjust text size for smaller screens */
+  }
+}
