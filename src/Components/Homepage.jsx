@@ -5,6 +5,7 @@ import Tilt from "react-parallax-tilt";
 import WebDev from "../Images/WebDev.png";
 import { CgPhone } from "react-icons/cg";
 import { BsPerson } from "react-icons/bs";
+import Footer from "./Footer";
 
 const Homepage = () => {
   return (
@@ -32,9 +33,7 @@ const Homepage = () => {
           <img className="WebDev" src={WebDev} alt="Web Developer" />
         </Tilt>
       </div>
-      <footer className="footer">
-        <p>&copy; 2024 Prajwal Pandgale. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
