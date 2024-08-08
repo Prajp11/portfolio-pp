@@ -499,3 +499,101 @@ footer h4 {
     transition: 0.5s;
   }
 }
+
+
+/*PROJECTS SECTION STYLES */
+.projects-container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px; /* Adjust this value to move the projects section down */
+}
+
+.project {
+  position: relative;
+  width: 300px;
+  margin: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text h3 {
+  margin: 0;
+  font-size: 24px;
+  color: white; /* Default title color */
+  transition: color 0.3s ease;
+}
+
+.project:hover .text h3 {
+  color: red; /* Title color on hover */
+}
+
+.text p {
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.text p span.technologies {
+  color: red; /* Technologies label color */
+  font-weight: bold;
+}
+
+.text p span.skill {
+  color: blue; /* Skills color */
+  font-weight: bold;
+}
+
+.text p span.company {
+  color: green; /* Company name color */
+}
+
+.text a {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.text a:hover {
+  color: #fefdd2; /* Change this color as needed */
+}
+
